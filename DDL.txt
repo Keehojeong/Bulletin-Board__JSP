@@ -1,0 +1,23 @@
+CREATE DATABASE jspfinal;
+
+use jspfinal;
+CREATE TABLE board(
+	board_idx INT NOT NULL AUTO_INCREMENT,
+	board_name VARCHAR(50),
+	board_email VARCHAR(100),
+	board_div VARCHAR(4),
+	board_title VARCHAR(50),
+	board_content VARCHAR(4000),
+	board_pw VARCHAR(20),
+	board_to_date VARCHAR(20),
+	board_from_date VARCHAR(20),
+CONSTRAINT board_PK PRIMARY KEY(board_idx)
+) DEFAULT CHARSET=utf8;
+;
+SET character_set_client = utf8;
+SET character_set_results = utf8;
+SET character_set_connection = utf8;
+ALTER DATABASE mysql DEFAULT CHARACTER SET utf8;
+;
+
+select * from board;
